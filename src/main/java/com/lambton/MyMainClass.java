@@ -1,8 +1,8 @@
 package com.lambton;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import com.sun.corba.se.impl.orbutil.CorbaResourceUtil;
+
+import java.util.*;
 
 public class MyMainClass
 {
@@ -25,8 +25,30 @@ public class MyMainClass
         {
             System.out.println(countryList.get(i));
         }
-        
-        List c = new ArrayList<String>();
+
+        HashSet<String>c = new HashSet<>();
+        c.add("A");
+        c.add("Bca");
+        c.add("bb");
+        c.add("B");
+        c.add("c");
+        c.add("d");
+
+        c.remove("B");
+        for(String s:c)
+        {
+            System.out.println(s);
+        }
+
+        HashMap<String, String>hashMap = new HashMap<>();
+
+        hashMap.put("IND","India");
+        hashMap.put("NEP","Nepal");
+
+        for (Map.Entry<String,String>entry:hashMap.entrySet())
+        {
+            System.out.println(entry.getKey()+ "-"+ entry.getValue());
+        }
 
     }
 }
