@@ -50,5 +50,7 @@ public class MyMainClass
             System.out.println(entry.getKey()+ "-"+ entry.getValue());
         }
 
+        HashMap<String, ArrayList<String>> countryStatesList = new HashMap<>();
+
     }
 }
